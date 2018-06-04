@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  < body>
+    <header class="main-header">
+  	<div class="logo">
+  	       <img src="img/index-logo.svg" width="50" height="50" alt="Логотип Седоны">
+    </div>
+  	<nav class="main-navigation">
+  		<ul>
+  			<li><a href ="info.html">Информация</a></li>
+  			<li><a href="photo.html">Фото и видео</a></li>
+  			<li><a href="state-map">Карта штата</a></li>
+  			<li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>	
+  		</ul>
+  	</nav>
+  </header>
+  <main class="container">
+  <section class="filters">
+        <h2 class="visually-hidden">Фильтр услуг</h2>
+        <!-- Здесь будет форма "Инфраструктура", "Тип жилья", "Стоимость в сутки"-->
+        <div class="slidecontainer">
+          <input class="slider" type="range" min="0" max="3000" value="50" name="myRange">
+        </div> 
+        <a class="button-show" href="#">Показать </a> 
+  </section>
+  <section class="catalog">
+        <h1 class="visually-hidden"> Результаты поиска</h1>
+        <table>
+          <tr class="sorting">
+            <th class="found-total">
+              <b class="finded">Найдено: 3</b>
+            </th>
+            <th class="sorting-table">
+              <b>Сортировка:</b>
+              <ul class="sorting-item">
+                <li class="sorting-item-current"><a href ="priсe.html">По цене</a></li>
+                <li><a href="type.html">По типу</a></li>
+                <li><a href="rating.html">По рейтингу</a></li>
+              </ul>
+            </th>
+               <th class="rating-sorting"> 
+              <div class="arrows">
+                <!--Здесь будут стрелки сортировки по рейтингу-->
+              </div>
+            </th>       
+          </tr>
+          <tr class="results-of-search">
+               <td class="image-the-results-of-search">
+                  <img src="http://placehold.it/150x100" alt="Изображение гостиницы">
+               </td>
+               <td class="accommodation-info">
+                   <table class="accomodation-offer">
+                     <caption class="accomodation-name">Amara resort & spa</caption>
+                       <tr class="sort&priсe">
+                          <td>Гостиница</td>
+                          <td>От 4000 P.</td>
+                       </tr>
+                       <tr class="table-button">
+                          <td>
+                            <div> <a class="table-button-more-info" href="#">Подробнее</a></div>
+                          </td>
+                          <td>
+                            <div><a class="table-button-book-it" href="#">Забронировать</a></div>
+                          </td> 
+                       </tr>  
+                    </table>   
+                </td>
+              <td class="stars-rating">
+                  <img src="img/four-stars.svg" width="20" height="10" alt="Рейтинг 4 звезды">
+                  <b class="rating-number">Рейтинг 8,5</b>
+              </td>    
+          </tr>
+          <tr>
+                <td class="image-the-results-of-search">
+                  <img src="http://placehold.it/150x100" alt="Изображение мотеля">
+                </td>
+                <td class="accommodation-info">
+                  <table class="accomodation-offer">
+                      <caption class="accomodation-name">Desert Quail inn</caption>
+                         <tr class="sort&price">
+                             <td>Моель</td>
+                             <td>От 3000 P.</td>
+                         </tr>
+                         <tr class="table-button">
+                             <td>
+                                <div><a class="table-button-more-info" href="#">Подробнее</a></div>
+                             </td>
+                             <td>
+                               <div><a class="table-button-book-it" href="#">Забронировать</a></div>
+                        </td>
+                        </tr>       
+                  </table>          
+                </td> 
+                <td class="stars-rating">
+                  <img src="img/three-stars.svg" width="20" height="10" alt=
+                  "Рейтинг 3 звезды">
+                  <b>Рейтинг 8,9</b>
+              </td>    
+          </tr>  
+          <tr>
+                <td class="image-the-results-of-search">
+                      <img src="http://placehold.it/150x100" alt="Изображение апартаментов">
+                </td>
+                <td class="accommodation-info">
+                  <table class="accomodation-offer">
+                      <caption class="accomodation-name">Villas at poco diablo</caption>
+                      <tr class="sort&price">
+                         <td>Апартаменты</td>
+                         <td>От 2000 P.</td>
+                      </tr>
+                      <tr class="table-button">
+                         <td>
+                            <div><a class="table-button-more-info" href="#">Подробнее</a></div>
+                         </td>
+                         <td>
+                            <div><a class="table-button-book-it" href="#">Забронировать</a></div>
+                         </td>
+                      </tr>             
+                   </table> 
+                   </td>          
+                  <td class="stars-rating">
+                     <img src="img/two-stars.svg" width="20" height="10" alt="Рейтинг 2 звезды">
+                  <b>Рейтинг 9,2</b>
+                  </td> 
+          </tr> 
+      </table>
+   </section>
+ </main>
+   <footer class="main-footer">
+  <h3 class="hashtag">
+    #Visitsedona
+  </h3>
+  <div class="footer-social">
+    <ul>
+      <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Ютуб</a></li>
+    </ul>
+  </div>  
+      <b class="footer-copyright">
+        Website by</b> 
+        <div class="logo-footer">
+           <img src="img/html-academy-logo.svg" width="20" height="20">
+        </div>   
+    </footer>
+   </body>
+  </html>
+
