@@ -8,7 +8,9 @@
     <header class="main-header">
       <nav class="navigation">
         <div class="main-header-logo">
-          <img src="img/index-logo.svg" width="150" height="50" alt="Логотип Седоны">
+          <a class="index-logo" href="index.html">
+          <img src="img/index-logo.svg" width="138" height="70" alt="Логотип Седоны">
+        </a>
          </div> 
         <ul class="menu">
           <li class="menu-item"><a href="info.html">Информация</a></li>
@@ -21,33 +23,72 @@
   <main class="main-content">
   <section class="filters">
         <h2 class="visually-hidden">Фильтр услуг</h2>
-        <!-- Здесь будет форма "Инфраструктура", "Тип жилья", "Стоимость в сутки"--> 
+        <form class="filtr" action="https//echo.htmlacademy.ru" method="get">
+          <fieldset class="left-filtr">
+          <h3 class="filters-names"> Инфраструктура: </h3>
+          <ul class="filters-list">
+          <li><input type="checkbox" name="swimmingpool" id="swimmingpool-filtr" checked>
+            <label for="swimmingpool-filtr">Бассейн</label>
+          </li>
+          <li><input type="checkbox" name="parking" id="parking-filtr">
+            <label for="parking-filtr">Парковка</label>
+          </li>
+          <li><input type="checkbox" name="wi-fi" id="wi-fi-filtr">
+            <label for="wi-fi-filtr">Wi-fi</label>
+          </li>
+        </ul>
+        </fieldset>
+        <fieldset class="centre-filtr">
+          <h3 class=accomodation-type> Тип жилья:</h3>
+          <ul class="filters-list">
+            <li><input type="checkbox" name="hotel" id="hotel-filtr" checked>
+              <label for="hotel-filtr">Гостиница</label>
+            </li>  
+              <li><input type="checkbox" name="motel" id="motel-filtr" checked>
+              <label for="motel-filtr">Мотель</label>
+            </li>  
+            <li><input type="checkbox" name="apartaments" id="apartaments-filtr" checked>
+              <label for="apartaments-filtr">Апартаменты</label>
+            </li>  
+          </ul>
+        </fieldset>
+        <fieldset class="right-filtr">
+          <h3 class="right-form">Стоимость в сутки (Р):</h3>
+          <div class="price-range"></div>
+          <button class="show" type="submit">Показать</button>
+        </fieldset>
+      </form>
   </section>
   <section class="catalog">
         <h2 class="visually-hidden"> Результаты поиска</h2>
            <section class="sorting">
             <h3>Найдено:3</h3>
-            <p>Сортировка</p>
-              <ul>
-                <li class="sorting-item-current">По цене</li>
-                <li class="sorting-item">По типу</li>
-                <li class="sorting-item">По рейтингу</li>
-              </ul>
+            <span>Сортировка:</span>
+                <button type="button" class="sort-price">
+                    <span >По цене</span>
+                </button>
+                <button type="button" class="sort-type">
+                    <span>По типу</span>
+                </button>
+                <button type="button" class="sort-rating">
+                    <span>По рейтингу</span>
+                </button>    
               <div class="arrows">
                 <button> <img class="arrows" src="img/arrow-ask.svg" width="11" height="10" alt="По возрастанию"></button>
                 <button> <img class="arrows" src="img/arrow-desk.svg" height="10" width="11" alt="По убыванию"></button>
-                <!--Здесь будут стрелки сортировки по рейтингу-->
               </div>
-            </section>
-            <section class="results">
-              <ul class="search-result">
-                  <li class="search-result-item">
+  </section>
+  <section class="results">
+          <ul class="search-result">
+                <li class="search-result-item">
                      <img src="img/hotel.jpg" width="135" height="90" alt="Изображение гостиницы">
                        <div class="info">
                           <h3><a href="amara-resort.html">Amara resort & spa</a></h3>
                           <div class="left-col">Гостиница</div>
                           <div class="right-col">от 4000 Р.</div>
                        </div>
+                       <button class="button-left" type="submit">Подробнее</button>
+                       <button class="button-right">Забронировать</button>
                        <div class="stars">
                          <img src="img/****.svg" width="90" height="17" alt="****">
                           <div class="number-rating">
@@ -62,6 +103,8 @@
                           <div class="left-col">Мотель</div>
                           <div class="right-col"> от 3000 Р.</div>
                        </div>
+                       <button class="button-left" type="submit">Подробнее</button>
+                       <button class="button-right" type="submit">Забронировать</button>
                       <div class="stars"></div>
                           <img src="img/***.svg" width="65" height="17" alt="****">
                        <div class="number-rating">
@@ -75,6 +118,8 @@
                           <div class="left-col">Апартаменты</div>
                           <div class="right-col">от 2000 Р.</div>
                        </div>
+                       <button class="button-left" type="submit">Подробнее</button>
+                       <button class="button-right" type="submit">Забронировать</button>
                        <div class="stars">
                          <img src="img/**.svg" width="41" height="17" alt="**">
                          <div class="number-rating">

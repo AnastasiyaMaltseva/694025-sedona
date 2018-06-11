@@ -8,7 +8,9 @@
     <header class="main-header">
       <nav class="navigation">
         <div class="main-header-logo">
+          <a class="index-logo" href="index.html">
           <img src="img/index-logo.svg" width="138" height="70" alt="Логотип Седоны">
+          </a>
          </div> 
         <ul class="menu">
           <li class="menu-item"><a href="info.html">Информация</a></li>
@@ -36,6 +38,7 @@
     	  	</div>    
       </section> 
       <section class="serviсes">
+        <h2 class="visually-hidden"> Услуги</h2>
       	  <ul class="serviсes-list">
       	      <li class="accommodation">
       	      	<div class="image-serviсe">
@@ -92,7 +95,24 @@
       <section class="hotel-search">
         <b>Заинтересовались?</b>
         <p class="search-info">Укажите предполагаемую дату поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <!-- Здесь будет форма -->
+        <h3 class="searh-form">Поиск гостиницы в Седоне</h3>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+         <p class="appointment-item">
+         <label for="appoitment-arrival">Дата заезда:</label>
+         <input id="appoitment-arrival" type="text" name="date" value=""placeholder="24 апреля 2017">
+       </p>
+       <p class="appoitment-item">
+         <label for="appoitment-departure">Дата выезда:</label>
+         <input id="appoitment-departure" type="text" name="date" value="" placeholder="4 июля 2017">
+       </p>
+       <p class="adults-children">
+          <label>Взрослые <input type="number" name="adults" value="" placeholder="2"></label>
+          <label>Дети <input type="number" name="children" value="" placeholder="0"></label>
+          <br>
+          <button class="button-search" type="submit">Найти</button>
+        </form>  
+       </p>
+       </form>
       </section>
      <div class="map"></div> 
  </main>
